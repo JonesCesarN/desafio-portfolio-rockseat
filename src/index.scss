@@ -4,14 +4,29 @@
 body {
   margin: 0;
   font-family: 'Merriweather Sans', sans-serif;
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $body-bg-color;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
 }
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  user-select: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: currentColor;
+  cursor: pointer;
 }
