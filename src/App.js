@@ -10,6 +10,7 @@ import { ReactComponent as Github } from './assets/svg/github.svg';
 import { ReactComponent as Linkedin } from './assets/svg/linkedin.svg';
 import { ReactComponent as MapPin } from './assets/svg/map-pin.svg';
 import './App.scss';
+import Footer from './layouts/Footer/Footer';
 
 function App() {
   return (
@@ -262,7 +263,7 @@ function App() {
           </article>
         </section>
       </div>
-      <footer>Feito com 💜 por jonescesarn</footer>
+      <Footer />
     </>
   );
 }
