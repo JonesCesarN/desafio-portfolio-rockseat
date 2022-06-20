@@ -13,7 +13,7 @@ function Projects() {
         <a href="#algo">Veja todos</a>
       </Card>
       <div className={css.projects__wrapper}>
-        <Card className={css.project__card}>
+        <Card className={css.project}>
           <h3 className={css.project__title}>
             <Folder className={css.project__svg} />
             my-onix
@@ -33,7 +33,7 @@ function Projects() {
             <div className={css.project__circle}>JavaScript</div>
           </div>
         </Card>
-        <Card className={css.project__card}>
+        <Card className={css.project}>
           <h3 className={css.project__title}>
             <Folder className={css.project__svg} />
             my-onix
@@ -53,7 +53,7 @@ function Projects() {
             <div className={css.project__circle}>JavaScript</div>
           </div>
         </Card>
-        <Card className={css.project__card}>
+        <Card className={css.project}>
           <h3 className={css.project__title}>
             <Folder className={css.project__svg} />
             my-onix

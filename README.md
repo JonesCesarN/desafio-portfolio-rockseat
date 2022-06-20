@@ -4,8 +4,6 @@
 
 # Desafio: Portfolio
 
-![image](https://user-images.githubusercontent.com/68172438/174486901-176c8564-6e36-4ce3-98df-c2bfb671af7a.png)
-
 ## **Índice**
 
 - [Índice](#índice)
@@ -29,7 +27,9 @@ Neste desafio você poderá criar uma página web para que seja seu portfolio e 
 
 ![image](https://user-images.githubusercontent.com/68172438/174486966-05ed710d-7160-492a-9ff2-b308da07427b.png)
 
-Você pode duplicar o layout do projeto [clicando aqui](https://www.figma.com/file/L6fCiWtOgXCfslQdezqQeF/DD-Portfolio/duplicate) ou baixar o zip com os assets do projeto.
+Você pode duplicar o layout do projeto
+[clicando aqui](https://www.figma.com/file/L6fCiWtOgXCfslQdezqQeF/DD-Portfolio/duplicate) ou baixar o zip com os assets
+do projeto.
 
 Baixe os assets aqui ⤵️
 
@@ -46,11 +46,13 @@ Baixe os assets aqui ⤵️
 
 ---
 
-1 - Use o link do Figma como base para o projeto. Também disponibilizamos para download todos os assets necessários (imagens e ícones), para fazer o download basta clicar no link acima.
+1 - Use o link do Figma como base para o projeto. Também disponibilizamos para download todos os assets necessários
+(imagens e ícones), para fazer o download basta clicar no link acima.
 
 2 - Leia com atenção todas as instruções do desafio.
 
-3 - Bora codar! Lembre-se que você pode usar as tecnologias que se sentir mais confortável, mas também pode se desafiar usando novas techs, fazendo modificações e/ou adicionando funcionalidades no projeto como preferir. 🚀
+3 - Bora codar! Lembre-se que você pode usar as tecnologias que se sentir mais confortável, mas também pode se desafiar
+usando novas techs, fazendo modificações e/ou adicionando funcionalidades no projeto como preferir. 🚀
 
 4 - Compartilhe seu resultado ou tire suas dúvidas na nossa [**comunidade aberta**](https://discord.gg/bacwY2gDCF)
 
@@ -58,7 +60,8 @@ Baixe os assets aqui ⤵️
 
 ---
 
-Neste desafio você vai construir o seu próprio portfolio. Caso você ainda não tenha feito os cursos do Discover ou queira fazer uma revisão, segue abaixo uma lista dos cursos que podem te ajudar a resolver este desafio.
+Neste desafio você vai construir o seu próprio portfolio. Caso você ainda não tenha feito os cursos do Discover ou
+queira fazer uma revisão, segue abaixo uma lista dos cursos que podem te ajudar a resolver este desafio.
 
 - [O guia estelar de HTML](https://app.rocketseat.com.br/node/o-guia-estelar-de-html)
 - [O guia estelar de CSS](https://app.rocketseat.com.br/node/o-guia-estelar-de-css)
@@ -98,12 +101,14 @@ font-family: Merriweather Sans
 
 font-weight: 400, 500 e 700
 
-Você pode encontrar a fonte no [Google Fonts](https://fonts.google.com/specimen/Merriweather+Sans?query=Merriweather+Sans)
+Você pode encontrar a fonte no
+[Google Fonts](https://fonts.google.com/specimen/Merriweather+Sans?query=Merriweather+Sans)
 
 # 📅 Entrega
 
 ---
 
-Esses desafios **não precisam ser entregues** e não receberão correção. Após concluí-los, adicionar esses códigos ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
+Esses desafios **não precisam ser entregues** e não receberão correção. Após concluí-los, adicionar esses códigos ao seu
+Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
 
 Feito com 💜 por Rocketseat 👋 Participe da nossa [comunidade aberta](https://discord.gg/bacwY2gDCF)!
