@@ -1,249 +1,143 @@
-@import './variables';
+@import '_variables.scss';
 
-.Container {
-  display: flex;
-  margin: 40px;
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    'info content'
+    'footer footer';
+  margin: 30px;
   gap: 60px;
+  align-items: flex-start;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  width: 348px;
-  gap: 30px;
+// .main {
+//   width: 952px;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 30px;
 
-  & div {
-    background-color: $bg-cards;
-  }
+//   & .container {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 30px;
+//   }
 
-  &__user {
-    @extend %card;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
+//   & .title {
+//     @extend %card;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+//     background-color: $bg-cards;
+//     & h2 {
+//       font-size: 20px;
+//       font-weight: bold;
+//     }
 
-    & img {
-      border-radius: 50%;
-      width: 128px;
-      border: 2px solid greenyellow;
-    }
-  }
+//     & a {
+//       font-size: 14px;
+//     }
+//   }
 
-  &__details {
-    @extend %card;
-    & ul {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+//   & .wrapper {
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     gap: 30px;
+//   }
 
-    & li {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      font-size: 13px;
-    }
-  }
+//   & .card {
+//     @extend %card;
+//     width: 100%;
+//     gap: 10px;
 
-  &__techs {
-    @extend %card;
-    gap: 20px;
-    & h3 {
-      font-size: 20px;
-    }
+//     & p {
+//       font-size: 14px;
+//       font-weight: 100;
+//     }
 
-    & .techs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: space-between;
-      font-size: 10px;
-      text-transform: uppercase;
-      color: black;
-      font-weight: bold;
+//     &__title {
+//       font-size: 16px;
+//       font-weight: bold;
+//       display: flex;
+//       align-items: flex-end;
+//       gap: 15px;
+//     }
 
-      &__item {
-        background-color: $bg-techs;
-        min-width: 75px;
-        text-align: center;
-        border-radius: 20px;
-        padding: 6px;
-      }
-    }
-  }
+//     &__svg {
+//       width: 20px;
+//     }
+//     &__footer {
+//       display: flex;
+//       justify-content: space-between;
+//       font-size: 14px;
 
-  &__experience {
-    @extend %card;
-    gap: 20px;
-    & h3 {
-      font-size: 20px;
-    }
+//       & .status {
+//         display: flex;
+//         gap: 15px;
+//         & div {
+//           display: flex;
+//           align-items: center;
+//           gap: 8px;
+//         }
+//       }
+//       & .circle {
+//         display: flex;
+//       }
 
-    & h4 {
-      font-size: 14px;
-      font-weight: bold;
-    }
+//       & .circle::before {
+//         display: flex;
+//         content: '';
+//         margin-right: 8px;
+//         border-radius: 50%;
+//         border: 2px solid $text-color;
+//         background-color: yellow;
+//         width: 15px;
+//         height: 15px;
+//       }
+//     }
+//   }
 
-    & p.light {
-      font-size: 12px;
-      font-weight: lighter;
-    }
-    & p.regular {
-      font-size: 12px;
-      font-weight: 600;
-    }
+//   & .card-photo {
+//     @extend %card;
+//     width: 100%;
+//     flex-direction: row;
+//     align-items: center;
+//     gap: 20px;
 
-    & ul {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+//     & img {
+//       width: 128px;
+//       border-radius: 50%;
+//     }
 
-    & li {
-      margin-left: 40px;
-      list-style-type: disc;
-      gap: 10px;
-    }
-  }
-}
+//     & .content {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       height: 100%;
+//       & div {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 10px;
+//       }
 
-.user__name {
-  font-size: 23px;
-  font-weight: bold;
-}
-.user__area {
-  font-size: 13px;
-  font-weight: lighter;
-}
+//       & h2 {
+//         font-size: 18px;
+//         font-weight: bold;
+//       }
 
-.main {
-  width: 952px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+//       & p {
+//         font-size: 16px;
+//       }
 
-  & .container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+//       & span {
+//         font-size: 14px;
+//         font-weight: lighter;
+//       }
 
-  & .title {
-    @extend %card;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $bg-cards;
-    & h2 {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    & a {
-      font-size: 14px;
-    }
-  }
-
-  & .wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-  }
-
-  & .card {
-    @extend %card;
-    width: 100%;
-    gap: 10px;
-
-    & p {
-      font-size: 14px;
-      font-weight: 100;
-    }
-
-    &__title {
-      font-size: 16px;
-      font-weight: bold;
-      display: flex;
-      align-items: flex-end;
-      gap: 15px;
-    }
-
-    &__svg {
-      width: 20px;
-    }
-    &__footer {
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-
-      & .status {
-        display: flex;
-        gap: 15px;
-        & div {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-        }
-      }
-      & .circle {
-        display: flex;
-      }
-
-      & .circle::before {
-        display: flex;
-        content: '';
-        margin-right: 8px;
-        border-radius: 50%;
-        border: 2px solid $text-color;
-        background-color: yellow;
-        width: 15px;
-        height: 15px;
-      }
-    }
-  }
-
-  & .card-photo {
-    @extend %card;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-
-    & img {
-      width: 128px;
-      border-radius: 50%;
-    }
-
-    & .content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      & div {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      & h2 {
-        font-size: 18px;
-        font-weight: bold;
-      }
-
-      & p {
-        font-size: 16px;
-      }
-
-      & span {
-        font-size: 14px;
-        font-weight: lighter;
-      }
-
-      & .footer span {
-        display: flex;
-        gap: 15px;
-      }
-    }
-  }
-}
+//       & .footer span {
+//         display: flex;
+//         gap: 15px;
+//       }
+//     }
+//   }
+// }

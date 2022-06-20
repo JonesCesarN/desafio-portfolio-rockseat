@@ -1,15 +1,15 @@
-// import instagram from "./assets/svg/instagram.svg";
-
 import './App.scss';
-import Footer from './layouts/Footer/Footer';
-import Main from './layouts/Main/Main';
+import Footer from 'components/layouts/Footer/Footer';
+import Info from 'components/layouts/Info/Info';
+import Contents from 'components/layouts/Contents/Contents';
 
 function App() {
   return (
-    <>
-      <Main />
+    <div className="wrapper">
+      <Info />
+      <Contents />
       <Footer />
-    </>
+    </div>
   );
 }
 

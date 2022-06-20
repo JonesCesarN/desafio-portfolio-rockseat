@@ -1,0 +1,96 @@
+@import '_variables.scss';
+
+.container {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+  gap: 30px;
+}
+
+.profile {
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+
+  &__name {
+    font-size: 23px;
+    font-weight: bold;
+  }
+
+  &__area {
+    font-size: 13px;
+    font-weight: lighter;
+  }
+}
+
+.info {
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  & li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 13px;
+  }
+}
+
+.techs {
+  gap: 20px;
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+  }
+
+  & li {
+    background-color: $bg-techs;
+    min-width: 75px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 6px;
+  }
+}
+
+.experience {
+  gap: 20px;
+
+  & h3 {
+    font-size: 20px;
+  }
+
+  & h4 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  & p {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  & h5 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  & li {
+    margin-left: 40px;
+    list-style-type: disc;
+  }
+}

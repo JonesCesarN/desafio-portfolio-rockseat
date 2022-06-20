@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.scss';
+import './Footer.module.scss';
 
 function Footer() {
   return <footer>Feito com 💜 por jonescesarn</footer>;

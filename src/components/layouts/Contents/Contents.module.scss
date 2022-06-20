@@ -1,0 +1,6 @@
+@import '_variables.scss';
+
+.container {
+  background-color: $bg-cards;
+  grid-area: content;
+}

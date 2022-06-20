@@ -1,5 +1,7 @@
+@import '_variables.scss';
+
 footer {
   font-size: 14px;
+  grid-area: footer;
   text-align: center;
-  margin-bottom: 30px;
 }

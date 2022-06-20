@@ -1,0 +1,9 @@
+@import '_variables.scss';
+
+.card {
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-cards;
+}
