@@ -8,17 +8,17 @@ import { ReactComponent as Linkedin } from 'assets/svg/linkedin.svg';
 import { ReactComponent as MapPin } from 'assets/svg/map-pin.svg';
 import css from './Info.module.scss';
 import Card from 'components/Card/Card';
-import CircleImg from 'components/CircleImg/CircleImg';
 
 function Info() {
   return (
     <section className={css.container}>
       <Card className={css.profile}>
-        <CircleImg
+        <img
           src="https://avatars.githubusercontent.com/u/68172438?v=4"
           alt="photo-profile"
-          width={128}
+          className={css.profile__photo}
         />
+
         <div>
           <h3 className={css.profile__name}>Jones Cesar N</h3>
           <p className={css.profile__area}>Full Stack Developer</p>

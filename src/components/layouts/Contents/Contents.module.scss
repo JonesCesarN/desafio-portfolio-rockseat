@@ -1,6 +1,11 @@
-@import '_variables.scss';
-
 .container {
-  background-color: $bg-cards;
   grid-area: content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 892px;
+
+  & svg {
+    width: 20px;
+  }
 }

@@ -22,6 +22,12 @@
     font-size: 13px;
     font-weight: lighter;
   }
+
+  &__photo {
+    border-radius: 50%;
+    border: 2px solid greenyellow;
+    width: 128px;
+  }
 }
 
 .info {
