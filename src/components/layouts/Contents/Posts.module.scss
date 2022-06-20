@@ -34,6 +34,14 @@
   gap: 20px;
   cursor: pointer;
 
+  &:hover {
+    box-shadow: 0px 0px 0px 2px $bg-techs inset;
+  }
+
+  & * {
+    pointer-events: none;
+  }
+
   &__photo {
     width: 128px;
     border-radius: 50%;

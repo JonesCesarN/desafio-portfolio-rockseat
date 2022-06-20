@@ -2,11 +2,3 @@ $body-bg-color: #22212c;
 $text-color: #837e9f;
 $bg-cards: #302f3d;
 $bg-techs: #cb92b1;
-
-%card {
-  border-radius: 20px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  background-color: $bg-cards;
-}
