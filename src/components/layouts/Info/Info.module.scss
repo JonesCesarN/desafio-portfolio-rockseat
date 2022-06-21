@@ -1,4 +1,4 @@
-@import '_variables.scss';
+@import "_variables.scss";
 
 .container {
   grid-area: info;
@@ -27,6 +27,28 @@
     border-radius: 50%;
     border: 2px solid greenyellow;
     width: 128px;
+    font-size: 128px;
+  }
+}
+.wrapperPhoto {
+  position: relative;
+}
+
+.photo_loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: is-rotating 1s infinite;
+  border: 2px solid #837e9f;
+  border-radius: 50%;
+  border-top-color: #cb92b1;
+  height: 128px;
+  width: 128px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
   }
 }
 

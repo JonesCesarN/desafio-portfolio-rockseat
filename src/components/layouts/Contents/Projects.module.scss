@@ -1,4 +1,8 @@
-@import '_variables.scss';
+@import "_variables.scss";
+
+.loading {
+  width: 150px !important;
+}
 
 .projects {
   display: flex;
@@ -77,11 +81,11 @@
 
     &::before {
       display: flex;
-      content: '';
+      content: "";
       margin-right: 8px;
       border-radius: 50%;
       border: 2px solid $text-color;
-      background-color: yellow;
+      background-color: var(--my-color-var);
       width: 15px;
       height: 15px;
     }
