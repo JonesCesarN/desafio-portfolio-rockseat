@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/desafio-portfolio-rockseat/static/css/main.bb05565f.css",
-    "main.js": "/desafio-portfolio-rockseat/static/js/main.355079f5.js",
+    "main.js": "/desafio-portfolio-rockseat/static/js/main.a4a84a79.js",
     "static/media/loading.svg": "/desafio-portfolio-rockseat/static/media/loading.14b9a8fc116147400337765f98a92dc5.svg",
     "static/media/github.svg": "/desafio-portfolio-rockseat/static/media/github.e7ab8675a2cbadea548cafe724065b9e.svg",
     "index.html": "/desafio-portfolio-rockseat/index.html",
@@ -15,10 +15,10 @@
     "static/media/map-pin.svg": "/desafio-portfolio-rockseat/static/media/map-pin.8c41fcd32a64210260619a622335959e.svg",
     "static/media/folder.svg": "/desafio-portfolio-rockseat/static/media/folder.131f06eb968394918a3f4b04151f5a03.svg",
     "main.bb05565f.css.map": "/desafio-portfolio-rockseat/static/css/main.bb05565f.css.map",
-    "main.355079f5.js.map": "/desafio-portfolio-rockseat/static/js/main.355079f5.js.map"
+    "main.a4a84a79.js.map": "/desafio-portfolio-rockseat/static/js/main.a4a84a79.js.map"
   },
   "entrypoints": [
     "static/css/main.bb05565f.css",
-    "static/js/main.355079f5.js"
+    "static/js/main.a4a84a79.js"
   ]
 }
