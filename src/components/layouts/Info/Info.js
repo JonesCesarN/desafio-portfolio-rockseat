@@ -1,24 +1,44 @@
-import React from 'react';
-import { ReactComponent as Mail } from 'assets/svg/mail.svg';
-import { ReactComponent as Globe } from 'assets/svg/globe.svg';
-import { ReactComponent as Twitter } from 'assets/svg/twitter.svg';
-import { ReactComponent as Briefcase } from 'assets/svg/briefcase.svg';
-import { ReactComponent as Github } from 'assets/svg/github.svg';
-import { ReactComponent as Linkedin } from 'assets/svg/linkedin.svg';
-import { ReactComponent as MapPin } from 'assets/svg/map-pin.svg';
-import css from './Info.module.scss';
-import Card from 'components/Card/Card';
+import React, { useState } from "react";
+import { ReactComponent as Mail } from "assets/svg/mail.svg";
+import { ReactComponent as Globe } from "assets/svg/globe.svg";
+import { ReactComponent as Twitter } from "assets/svg/twitter.svg";
+import { ReactComponent as Briefcase } from "assets/svg/briefcase.svg";
+import { ReactComponent as Github } from "assets/svg/github.svg";
+import { ReactComponent as Linkedin } from "assets/svg/linkedin.svg";
+import { ReactComponent as MapPin } from "assets/svg/map-pin.svg";
+import css from "./Info.module.scss";
+import Card from "components/Card/Card";
+import { FaUserCircle } from "react-icons/fa";
+
+import { useSelector } from "react-redux";
+import { selectRepoGitHub } from "redux/slices/gitHubSlice";
 
 function Info() {
+  const dataStatus = useSelector(selectRepoGitHub);
+  const { data, loading } = dataStatus;
+
+  const photoStatus = {
+    complete: (
+      <img
+        src={data.userInfo?.avatar_url}
+        alt="profile"
+        className={css.profile__photo}
+      />
+    ),
+    loading: (
+      <div className={css.wrapperPhoto}>
+        <span className={css.photo_loading}></span>
+        <FaUserCircle className={`${css.profile__photo} ${css.photo_rotate}`} />
+      </div>
+    ),
+  };
+
+  // loading: (<Loading className={css.photo_loading} />),
+
   return (
     <section className={css.container}>
       <Card className={css.profile}>
-        <img
-          src="https://avatars.githubusercontent.com/u/68172438?v=4"
-          alt="photo-profile"
-          className={css.profile__photo}
-        />
-
+        {loading ? photoStatus.loading : photoStatus.complete}
         <div>
           <h3 className={css.profile__name}>Jones Cesar N</h3>
           <p className={css.profile__area}>Full Stack Developer</p>

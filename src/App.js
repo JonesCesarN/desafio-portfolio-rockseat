@@ -1,43 +1,34 @@
-import './App.scss';
-import Footer from 'components/layouts/Footer/Footer';
-import Info from 'components/layouts/Info/Info';
-import Contents from 'components/layouts/Contents/Contents';
-
-import axios from 'axios';
-import React from 'react';
-
-const baseURL = 'https://api.github.com';
+import "./App.scss";
+import Footer from "components/layouts/Footer/Footer";
+import Info from "components/layouts/Info/Info";
+import Contents from "components/layouts/Contents/Contents";
+import React, { useCallback, useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchUserRepoThunk } from "redux/slices/gitHubThunk";
+import { selectRepoGitHub } from "redux/slices/gitHubSlice";
 
 function App() {
-  const [error, setError] = React.useState(null);
+  const dispatch = useDispatch();
+  const dataStatus = useSelector(selectRepoGitHub);
 
-  React.useEffect(() => {
-    // invalid url will trigger an 404 error
-    axios
-      .get(`${baseURL}/users/JonesCesarN/repos`)
-      .then(response => {
-        console.log(response.data);
-      })
-      .catch(error => {
-        setError(error);
-      });
-  }, []);
+  useEffect(() => {
+    dispatch(fetchUserRepoThunk());
+  }, [dispatch]);
 
-  if (error)
+  if (dataStatus.error) {
     return (
-      <h3
+      <h1
         style={{
-          width: '100vw',
-          height: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: 'red',
-        }}>
-        Error: {error.message}
-      </h3>
+          display: "flex",
+          height: "100vh",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        Erro na requisição
+      </h1>
     );
-
+  }
   return (
     <div className="wrapper">
       <Info />

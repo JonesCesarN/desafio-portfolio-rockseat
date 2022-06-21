@@ -11,8 +11,8 @@ function Posts() {
       <div className={css.posts__wrapper}>
         <Card className={css.post}>
           <img
-            src="https://avatars.githubusercontent.com/u/68172438?v=4"
-            alt="photo-profile"
+            src="https://avatars.githubusercontent.com/u/68172438"
+            alt="profile"
             className={css.post__photo}
           />
           <div className={css.post__content}>
