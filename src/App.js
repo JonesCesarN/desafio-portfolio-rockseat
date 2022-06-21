@@ -2,7 +2,7 @@ import "./App.scss";
 import Footer from "components/layouts/Footer/Footer";
 import Info from "components/layouts/Info/Info";
 import Contents from "components/layouts/Contents/Contents";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUserRepoThunk } from "redux/slices/gitHubThunk";
 import { selectRepoGitHub } from "redux/slices/gitHubSlice";

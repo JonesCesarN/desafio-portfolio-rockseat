@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ReactComponent as Mail } from "assets/svg/mail.svg";
 import { ReactComponent as Globe } from "assets/svg/globe.svg";
 import { ReactComponent as Twitter } from "assets/svg/twitter.svg";

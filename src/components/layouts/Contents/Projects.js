@@ -21,9 +21,10 @@ function Projects() {
     <article className={css.projects}>
       <Card className={css.projects__title}>
         <h2>My Projects</h2>
+
         <a
           href={`https://github.com/${process.env.REACT_APP_GITHUB_USER}?tab=repositories`}
-          target="_blank"
+          rel="noopener"
         >
           Veja todos
         </a>
