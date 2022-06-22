@@ -1,6 +1,6 @@
 import axios from "axios";
 import { LangColorGithub } from "helpers/languagesColorGithub";
-const githubUser = process.env.REACT_APP_GITHUB_USER || "jonescesarn";
+const githubUser = "jonescesarn"; // process.env.REACT_APP_GITHUB_USER
 const githubKey = process.env.REACT_APP_GITHUB_KEY;
 
 export const apiGithub = axios.create({
@@ -11,8 +11,6 @@ export const apiGithub = axios.create({
 });
 
 export const getRepos = async (user) => {
-  // => ENDPOINT /users/${user}/repos
-  // => RETURN USE {name,language, stargazers_count, description }
   try {
     const result = await apiGithub.get(
       `/users/${!user ? githubUser : user}/repos`
@@ -78,5 +76,3 @@ export const gitHubUserRepos = async () => {
   const data = { userInfo, githubdata };
   return data;
 };
-
-// export default apiGithub;
