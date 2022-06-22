@@ -1,6 +1,14 @@
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=green&style=for-the-badge"/>
 </p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" />
+<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
+
+</p>
+
 <p align="center" border="10">
 <a href="https://jonescesarn.github.io/desafio-portfolio-rockseat/" target="_blank">Visualizar pagina</a>
 </p>
