@@ -1,13 +1,13 @@
 import axios from "axios";
 import { LangColorGithub } from "helpers/languagesColorGithub";
-const githubUser = process.env.REACT_APP_GITHUB_USER;
+const githubUser = process.env.REACT_APP_GITHUB_USER || "jonescesarn";
 const githubKey = process.env.REACT_APP_GITHUB_KEY;
 
 export const apiGithub = axios.create({
   baseURL: "https://api.github.com",
-  headers: {
-    Authorization: `token ${githubKey}`,
-  },
+  // headers: {
+  //   Authorization: `token ${githubKey}`,
+  // },
 });
 
 export const getRepos = async (user) => {
