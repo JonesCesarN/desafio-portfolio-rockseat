@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },

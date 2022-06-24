@@ -4,9 +4,6 @@ import { LangColorGithub } from "./languagesColorGithub";
 
 let axiosOpts = {
   baseURL: "https://api.github.com",
-  headers: {
-    Authorization: `token ${githubKey}`,
-  }
 }
 
 export const apiGithub = axios.create(axiosOpts);
