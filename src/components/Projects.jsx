@@ -10,7 +10,6 @@ import ptBR from 'date-fns/locale/pt-BR'
 export const Projects = () => {
   const dataStatus = useSelector(selectRepoGitHub);
   const { data, loading } = dataStatus;
-  console.log({ data, loading })
 
   return (
     <div className='flex flex-col gap-15'>
