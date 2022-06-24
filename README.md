@@ -31,7 +31,7 @@ usando novas techs, fazendo modificações e/ou adicionando funcionalidades no p
 
 **_Se desafie também:_**
 
-- :hourglass: _Tornando o design responsivo_
+- [x] _Tornando o design responsivo_
 - [x] _Consumir a API do Github_
 
 ## Layout
