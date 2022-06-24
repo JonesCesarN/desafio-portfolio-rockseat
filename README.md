@@ -13,7 +13,7 @@
 <a href="https://jonescesarn.github.io/desafio-portfolio-rockseat/" target="_blank">Visualizar pagina</a>
 </p>
 
-# Preview Mobile/Tablet
+# Preview Responsive Mobile/Tablet
 ![image](https://user-images.githubusercontent.com/68172438/175445520-63ae23fe-5f0e-474e-bece-68f87b832463.png)
 
 # Desafio: Portfolio
